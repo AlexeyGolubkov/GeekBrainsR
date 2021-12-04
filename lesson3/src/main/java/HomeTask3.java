@@ -26,7 +26,7 @@ class HomeTask3 {
                 System.out.printf("%5d", num);
             }
         }
-        System.out.println("");
+        //
         //4)
         final int NUM_FOR4=11;
         int[][] arrayForTask4 = new int[NUM_FOR4][NUM_FOR4];
@@ -59,8 +59,10 @@ class HomeTask3 {
         // System.out.println(Arrays.toString(arrayForTask6));
         // System.out.println(Arrays.toString(minAndMaxOfArray));
         //7)
-        final int NUM_FOR7=7;
+        final int NUM_FOR7=8;
         int[] arrayForTask7 = new int[NUM_FOR7];
+/*
+        // here you can created special array for task 7
         arrayForTask7[0] = 2;
         arrayForTask7[1] = 2;
         arrayForTask7[2] = 0;
@@ -68,12 +70,20 @@ class HomeTask3 {
         arrayForTask7[4] = 2;
         arrayForTask7[5] = 2;
         arrayForTask7[6] = 8;
-     //   Random random = new Random(NUM_FOR7);
-/*
+        arrayForTask7[6] = 0;*/
+
+///* try to run the program several times and the desired sequence will be created:
+        System.out.println();
         for (int i=0;i<NUM_FOR7;i++){
-            arrayForTask7 [i]= random.nextInt(i);
+            if (i%2==1) {
+                arrayForTask7[i] = (int) (i*Math.random());
+            } else{
+                arrayForTask7[i] = (int) (-i+ NUM_FOR7*Math.random());
+            }
+
+            //System.out.printf("%5d",arrayForTask7 [i]);
         }
-*/
+//*/
         boolean b7=intraSpecificArrayPlace(arrayForTask7);
 
     }
@@ -107,12 +117,12 @@ class HomeTask3 {
         for (int i=0;i<=len-2;i++) {
             if (sumHead[i]==sumTail[i])  {
                 result = true;
-                ///*
+                /*
                 //checking Task7
                 System.out.println("i="+i);
                 System.out.println(Arrays.toString(sumHead));
                 System.out.println(Arrays.toString(sumTail));
-               // */
+                */
             }
         }
         return result;
