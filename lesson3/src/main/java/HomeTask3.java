@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 
 class HomeTask3 {
     public static void main(String[] args) {
@@ -41,7 +42,7 @@ class HomeTask3 {
         len=10;
         initialValue="2021";
         String[] arrayForTask5 = new String[len];
-        arrayForTask5 = arrayInitiol(len,initialValue);
+        arrayForTask5 = arrayInitial(len,initialValue);
         // for checking Task5
         // System.out.println(Arrays.toString(arrayForTask5));
         //6)
@@ -61,24 +62,41 @@ class HomeTask3 {
         final int NUM_FOR7=7;
         int[] arrayForTask7 = new int[NUM_FOR7];
         arrayForTask7[0] = 2;
-        arrayForTask7[1] = 0;
+        arrayForTask7[1] = 2;
         arrayForTask7[2] = 0;
         arrayForTask7[3] = 0;
         arrayForTask7[4] = 2;
         arrayForTask7[5] = 2;
-        arrayForTask7[6] = 2;
+        arrayForTask7[6] = 8;
+     //   Random random = new Random(NUM_FOR7);
+/*
+        for (int i=0;i<NUM_FOR7;i++){
+            arrayForTask7 [i]= random.nextInt(i);
+        }
+*/
         boolean b7=intraSpecificArrayPlace(arrayForTask7);
 
     }
 
     private static boolean intraSpecificArrayPlace(int[] array) {
         int len=array.length;
+        switch (len) {
+            case 1:
+                System.out.println("Массив из одного числа");
+                return false;
+            // алгоритм сам  подсчитает
+            // case 2:
+            //    return (array[0] == array[1]);
+            default:
+        }
+
+
         // control points for amounts became less by one
         int[] sumHead=new int[len-1];
         int[] sumTail=new int[len-1];
         boolean result=false;
         sumHead[0]=array[0];
-        sumTail[len-2] = array[len-2];
+        sumTail[len-2] = array[len-1];
         for (int k=1;k<len-1;k++)  {
             sumHead [k]=sumHead [k-1]+array[k];
             for(int i=k;i<len;i++) {
@@ -86,15 +104,15 @@ class HomeTask3 {
             }
         }
         // сравнение массивов сумм начал и концов последовательности
-        for (int i=0;i<len-2;i++) {
+        for (int i=0;i<=len-2;i++) {
             if (sumHead[i]==sumTail[i])  {
                 result = true;
-                /*
+                ///*
                 //checking Task7
                 System.out.println("i="+i);
                 System.out.println(Arrays.toString(sumHead));
                 System.out.println(Arrays.toString(sumTail));
-                */
+               // */
             }
         }
         return result;
@@ -113,7 +131,7 @@ class HomeTask3 {
         return minAndMax;
     }
 
-    private static String[] arrayInitiol(int len, String initialValue) {
+    private static String[] arrayInitial(int len, String initialValue) {
         String[] array = new String[len];
         for(int i=0;i<len;i++){
             array[i]=initialValue;
