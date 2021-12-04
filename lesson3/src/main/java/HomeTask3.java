@@ -21,9 +21,10 @@ class HomeTask3 {
         for (int num : arrayForTask3) {
             if (num < 6) {
                 num = num * 2;
-                System.out.printf("%5d", num);
+                //System.out.printf("%5d", num);
             } else {
-                System.out.printf("%5d", num);
+                num=num;
+                 //System.out.printf("%5d", num);
             }
         }
         //
@@ -70,7 +71,7 @@ class HomeTask3 {
         arrayForTask7[4] = 2;
         arrayForTask7[5] = 2;
         arrayForTask7[6] = 8;
-        arrayForTask7[6] = 0;*/
+        arrayForTask7[7] = 0;*/
 
 ///* try to run the program several times and the desired sequence will be created:
         System.out.println();
@@ -81,12 +82,50 @@ class HomeTask3 {
                 arrayForTask7[i] = (int) (-i+ NUM_FOR7*Math.random());
             }
 
-            //System.out.printf("%5d",arrayForTask7 [i]);
+            System.out.printf("%5d",arrayForTask7 [i]);
         }
 //*/
         boolean b7=intraSpecificArrayPlace(arrayForTask7);
-
+        //8) используем в качестве массива массив, созданный в Task7 только в вещественных переменных
+        //final int KF_FOR_SHIFT = 1000000000;
+        int numSteps=4;
+        //numSteps=(int)(KF_FOR_SHIFT*(-1+Math.random()));
+        int [] arrayForTask8 = new int [NUM_FOR7];
+        arrayForTask8= arrayForTask7;
+        arrayForTask8=ciclicShiftNumSteps (numSteps,arrayForTask8);
+        System.out.println();
+        System.out.println(Arrays.toString(arrayForTask8));
     }
+
+    private static int[] ciclicShiftNumSteps(int numSteps, int[] array) {
+        int len = array.length;
+        int numCicle=len/numSteps;
+        int k1 = 0;
+        int flagF = 1;
+        if (numSteps < 0) {
+            flagF = -1;
+        }
+        numSteps = Math.abs(numSteps % len);
+        int forRec,forRecNew ;
+        for (int i = 0; i < numSteps; i++) {
+            forRec=array[i];
+            for (int k = 1; k <= numCicle; k ++) {
+
+                if ((i + k*numSteps) / len < 1) {
+                    forRecNew = array[i + k*numSteps] ;
+                    array[i + k*numSteps] = forRec;
+
+                } else {
+                    k1 = (i + k*numSteps) % len;
+                    forRecNew=array[k1];
+                    array[k1]= forRec;
+                }
+                forRec=forRecNew;
+            }
+        }
+        return array;
+    }
+
 
     private static boolean intraSpecificArrayPlace(int[] array) {
         int len=array.length;
@@ -94,10 +133,6 @@ class HomeTask3 {
             case 1:
                 System.out.println("Массив из одного числа");
                 return false;
-            // алгоритм сам  подсчитает
-            // case 2:
-            //    return (array[0] == array[1]);
-            default:
         }
 
 
