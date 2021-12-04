@@ -24,7 +24,7 @@ class HomeTask3 {
                 //System.out.printf("%5d", num);
             } else {
                 num=num;
-                 //System.out.printf("%5d", num);
+                //System.out.printf("%5d", num);
             }
         }
         //
@@ -60,20 +60,21 @@ class HomeTask3 {
         // System.out.println(Arrays.toString(arrayForTask6));
         // System.out.println(Arrays.toString(minAndMaxOfArray));
         //7)
-        final int NUM_FOR7=8;
+        final int NUM_FOR7=10;
         int[] arrayForTask7 = new int[NUM_FOR7];
-/*
+///*
         // here you can created special array for task 7
-        arrayForTask7[0] = 2;
-        arrayForTask7[1] = 2;
-        arrayForTask7[2] = 0;
-        arrayForTask7[3] = 0;
-        arrayForTask7[4] = 2;
-        arrayForTask7[5] = 2;
-        arrayForTask7[6] = 8;
-        arrayForTask7[7] = 0;*/
-
-///* try to run the program several times and the desired sequence will be created:
+        arrayForTask7[0] = 0;
+        arrayForTask7[1] = 1;
+        arrayForTask7[2] = 2;
+        arrayForTask7[3] = 3;
+        arrayForTask7[4] = 4;
+        arrayForTask7[5] = 5;
+        arrayForTask7[6] = 6;
+        arrayForTask7[7] = 7;//*/
+        arrayForTask7[8] = 8;//*/
+        arrayForTask7[9] = 9;//*/sum[0...8]=36
+/* You can run the program several times and the desired sequence for task 7 will be created:
         System.out.println();
         for (int i=0;i<NUM_FOR7;i++){
             if (i%2==1) {
@@ -84,12 +85,13 @@ class HomeTask3 {
 
             System.out.printf("%5d",arrayForTask7 [i]);
         }
-//*/
+        System.out.println();
+*/
         boolean b7=intraSpecificArrayPlace(arrayForTask7);
         //8) используем в качестве массива массив, созданный в Task7 только в вещественных переменных
-        //final int KF_FOR_SHIFT = 1000000000;
-        int numSteps=4;
-        //numSteps=(int)(KF_FOR_SHIFT*(-1+Math.random()));
+        final int KF_FOR_SHIFT = 1000000000;
+        int numSteps= - 4; // for fast checking
+        numSteps=(int)(KF_FOR_SHIFT*(-1+Math.random()));
         int [] arrayForTask8 = new int [NUM_FOR7];
         arrayForTask8= arrayForTask7;
         arrayForTask8=ciclicShiftNumSteps (numSteps,arrayForTask8);
@@ -98,33 +100,62 @@ class HomeTask3 {
     }
 
     private static int[] ciclicShiftNumSteps(int numSteps, int[] array) {
-        int len = array.length;
-        int numCicle=len/numSteps;
-        int k1 = 0;
+        int len=array.length;
+        int log_i=0;
         int flagF = 1;
         if (numSteps < 0) {
             flagF = -1;
         }
-        numSteps = Math.abs(numSteps % len);
-        int forRec,forRecNew ;
-        for (int i = 0; i < numSteps; i++) {
-            forRec=array[i];
-            for (int k = 1; k <= numCicle; k ++) {
-
-                if ((i + k*numSteps) / len < 1) {
-                    forRecNew = array[i + k*numSteps] ;
-                    array[i + k*numSteps] = forRec;
-
-                } else {
-                    k1 = (i + k*numSteps) % len;
-                    forRecNew=array[k1];
-                    array[k1]= forRec;
-                }
-                forRec=forRecNew;
+        System.out.println("flagF"+flagF);
+        numSteps = (int)Math.abs(numSteps % len);
+        int accumulator;
+        for (int k=0; k<numSteps; k++) {
+            switch (flagF){
+                case -1:
+                    accumulator=array[0];
+                    for(int i=0;i<len-1;i++){
+                        array [i]=array[i+1];
+                    }
+                    array[len-1]=accumulator;
+                    break;
+                case 1:
+                    accumulator=array[len-1];
+                    for(int i=0;i<len-1;i++){
+                        array [len-i-1]=array[len-i-2];
+                    }
+                    array[0]=accumulator;
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value flagF: " + flagF);
             }
         }
+
+
         return array;
     }
+/*
+    private static int[] shiftArray1(int flagF, int[] array1) {
+        int len = array1.length;
+        int accumulator;
+        switch (flagF){
+            case -1:
+                accumulator=array1[0];
+                for(int i=0;i<len-2;i++){
+                array1 [i]=array1[i+1];
+                }
+                array1[len-1]=accumulator;
+                break;
+            case 1:
+                accumulator=array1[len-1];
+                for(int i=0;i<len-2;i++){
+                    array1 [len-i-1]=array1[len-i-2];
+                }
+                array1[0]=accumulator;
+            default:
+                throw new IllegalStateException("Unexpected value flagF: " + flagF);
+        }
+        return array1;
+    }*/
 
 
     private static boolean intraSpecificArrayPlace(int[] array) {
