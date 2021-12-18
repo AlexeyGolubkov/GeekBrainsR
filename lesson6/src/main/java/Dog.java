@@ -24,7 +24,7 @@ public class Dog extends Animals {
     @Override
         public String doSwim(int longTask) {
         String result="Собака "+getName()+" не может проплыть "+longTask+" метров";
-        if (longTask<=getLongOutdistanceRun()){
+        if (longTask<=getLongOutdistanceSwim()){
             result = "Собака "+getName()+" может проплыть " +longTask+" метров";
         }
         return result;
