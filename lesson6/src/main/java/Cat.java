@@ -14,9 +14,24 @@ public class Cat extends Animals {
     }
 
     @Override
-    public void doRun() {
-        System.out.printf("Кот может пробежать %s m%n",
-                getLongOutdistanceRun());
+    public String doRun(int longTask) {
+        String result="Кот "+ getName() +" не может пробежать "+longTask+" метров";
+        if (longTask<=getLongOutdistanceRun()){
+            result = "Кот "+ getName() +" пробегает " +longTask+" метров";
+        }
+        return result;
 
+    }
+    @Override
+    public String doSwim(int longTask) {
+        String result =
+                "Кошка " + getName() + ", как и все кошки, не умеет плавать и не может проплыть " + longTask +
+                        " метров";
+        if (longTask==0) {
+            result =
+                    "Кошка " + getName() + ", как и все кошки, не умеет плавать, но 0 метров она проплыть может";
+        }
+
+        return result;
     }
 }

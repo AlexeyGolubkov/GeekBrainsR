@@ -4,12 +4,13 @@ public abstract class Animals {
     private String colorOfAnimal;
     private int ageOfBirth ;
     protected int longOutdistanceRun;
-
+    protected int longOutdistanceSwim;
+    private static int numberAnimals=0;
 
 
     public Animals(
             String name, double weight,
-            String color, int ageOfBirth,int longOutdistanceRun ) {
+            String color, int ageOfBirth,int longOutdistanceRun,int longOutdistanceSwim ) {
 
 
         this.name = name;
@@ -17,8 +18,14 @@ public abstract class Animals {
         this.colorOfAnimal = colorOfAnimal;
         this.ageOfBirth = ageOfBirth;
         this.longOutdistanceRun=longOutdistanceRun;
-
+        this.longOutdistanceSwim=longOutdistanceSwim;
+        numberAnimals++;
     }
+
+    public static int getNumberAnimals() {
+        return numberAnimals;
+    }
+
     public Animals(
             String name, double weight,
             String color, int ageOfBirth) {
@@ -28,7 +35,10 @@ public abstract class Animals {
         this.weight = weight;
         this.colorOfAnimal = colorOfAnimal;
         this.ageOfBirth = ageOfBirth;
-        this.longOutdistanceRun=7;
+        this.longOutdistanceRun=0;
+        this.longOutdistanceSwim=0;
+        numberAnimals++;
+
 
     }
 
@@ -67,9 +77,30 @@ public abstract class Animals {
     public int getLongOutdistanceRun() {
         return longOutdistanceRun;
     }
- /*   public String doRun() {
-        return String.format("Может пробежать %d km",longOutDistanceRun);
+
+    public int getLongOutdistanceSwim() {
+        return longOutdistanceSwim;
     }
-*/
-    public abstract void doRun ();
+
+    public String doSwim (int longTask){
+        String result="";
+        if (longTask==0){
+            result+="Ноль метров преодолеть не проблема, хотя ";
+        }
+        if (getLongOutdistanceSwim()<=0){
+           result="животное не умеет плавать";
+        } else {
+            result = "животное может пробежать" + getLongOutdistanceRun() + " метров";
+        }
+        return result;
+    }
+    public String doRun (int longTask) {
+        String result="";
+        if (getLongOutdistanceSwim() <= 0) {
+            result = "Животное не умеет бегать";
+        } else{
+            result = "Животное может проплыть" + getLongOutdistanceSwim() + " метров";
+    }
+        return result;
+    }
 }
