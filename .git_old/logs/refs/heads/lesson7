@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 db7b76af944f7f19a4ab5042dc7e348e795e0f61 AlexeyGolubkov <mannallgoall@gmail.com> 1639858057 +0400	branch: Created from lesson6
+db7b76af944f7f19a4ab5042dc7e348e795e0f61 2455f8c1a5745c0ece30771849411a421ee29448 AlexeyGolubkov <mannallgoall@gmail.com> 1639901823 +0400	commit: кормим только голодных котов, до исчерпания возможности накормить привередливых (которые не едят если понимают, что не наедятся количеством еды в чашке)

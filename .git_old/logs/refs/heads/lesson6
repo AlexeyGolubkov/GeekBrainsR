@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 286650df94ad018d59174a83721152746ae4ef3d AlexeyGolubkov <mannallgoall@gmail.com> 1639806323 +0400	branch: Created from lesson5
+286650df94ad018d59174a83721152746ae4ef3d 1e1bd04c7f9768bc220ea9b05342706c63a1feda AlexeyGolubkov <mannallgoall@gmail.com> 1639811428 +0400	commit: Добавлен подсчет всех животных
+1e1bd04c7f9768bc220ea9b05342706c63a1feda db7b76af944f7f19a4ab5042dc7e348e795e0f61 AlexeyGolubkov <mannallgoall@gmail.com> 1639815481 +0400	commit: Исправлена ошибка в методе плавания собак

@@ -1,0 +1,34 @@
+0000000000000000000000000000000000000000 1a46545e36ced71843d122b87ffd58726a1e77eb AlexeyGolubkov <mannallgoall@gmail.com> 1637996239 +0400	clone: from https://github.com/AlexeyGolubkov/GeekBrainsR.git
+1a46545e36ced71843d122b87ffd58726a1e77eb 1a46545e36ced71843d122b87ffd58726a1e77eb AlexeyGolubkov <mannallgoall@gmail.com> 1637997131 +0400	checkout: moving from main to tryNewBranch
+1a46545e36ced71843d122b87ffd58726a1e77eb 1d2f646ccb35d2d58e84ac0fafa34f2ae0ab2b6b AlexeyGolubkov <mannallgoall@gmail.com> 1637997748 +0400	commit: FromGitGui
+1d2f646ccb35d2d58e84ac0fafa34f2ae0ab2b6b 1a46545e36ced71843d122b87ffd58726a1e77eb AlexeyGolubkov <mannallgoall@gmail.com> 1637998071 +0400	checkout: moving from tryNewBranch to main
+1a46545e36ced71843d122b87ffd58726a1e77eb 1d2f646ccb35d2d58e84ac0fafa34f2ae0ab2b6b AlexeyGolubkov <mannallgoall@gmail.com> 1638385933 +0400	checkout: moving from main to Lessons2
+1d2f646ccb35d2d58e84ac0fafa34f2ae0ab2b6b 6616e6b988b73b4933cdcbc772c92c8c5e6f704c AlexeyGolubkov <mannallgoall@gmail.com> 1638413178 +0400	commit: HomeTaskOfLesson2
+6616e6b988b73b4933cdcbc772c92c8c5e6f704c 17bbca51b9e7e3009b19d5003232fe05308caa26 AlexeyGolubkov <mannallgoall@gmail.com> 1638413578 +0400	checkout: moving from Lessons2 to main
+17bbca51b9e7e3009b19d5003232fe05308caa26 3523a77c07ed7cd86c6865dbe263cc06d51cb171 AlexeyGolubkov <mannallgoall@gmail.com> 1638413618 +0400	commit: Create workspace.xml
+3523a77c07ed7cd86c6865dbe263cc06d51cb171 6616e6b988b73b4933cdcbc772c92c8c5e6f704c AlexeyGolubkov <mannallgoall@gmail.com> 1638413803 +0400	checkout: moving from main to Lessons2
+6616e6b988b73b4933cdcbc772c92c8c5e6f704c 6616e6b988b73b4933cdcbc772c92c8c5e6f704c AlexeyGolubkov <mannallgoall@gmail.com> 1638609486 +0400	checkout: moving from Lessons2 to lesson3
+6616e6b988b73b4933cdcbc772c92c8c5e6f704c e7f5d245aca0508d401e76054128d14a4319c862 AlexeyGolubkov <mannallgoall@gmail.com> 1638610001 +0400	commit: lesson3
+e7f5d245aca0508d401e76054128d14a4319c862 915e98387bec23810e3dc706d26649fe9dec7239 AlexeyGolubkov <mannallgoall@gmail.com> 1638613878 +0400	commit: Исправлена ошибка последнего члена массива концов (len-2->len-1)
+915e98387bec23810e3dc706d26649fe9dec7239 54b8632f410f85c5752fde7c5c490ec59a12bfb3 AlexeyGolubkov <mannallgoall@gmail.com> 1638617392 +0400	commit: Добавлен код генерации случайных последовательностей у которых создаются условия равенства суммы начальных и конечных элементов. Код надо запустить нессколько раз, т.к. создание идет вероятностным методом
+54b8632f410f85c5752fde7c5c490ec59a12bfb3 35a12ed124cceb0c763773ecdc3fae111b02f53a AlexeyGolubkov <mannallgoall@gmail.com> 1638628038 +0400	commit: lesson 3 + half of task 8 (right shift - relesed)
+35a12ed124cceb0c763773ecdc3fae111b02f53a 07f0a09ab36d4329abc31ce9ce411dbd3b4e0fdd AlexeyGolubkov <mannallgoall@gmail.com> 1638640725 +0400	commit: Full home work of lesson3 (add task 8 with accumulator)
+07f0a09ab36d4329abc31ce9ce411dbd3b4e0fdd a721d132f6b6b95e365e916b840689f67c3e3adc AlexeyGolubkov <mannallgoall@gmail.com> 1638682416 +0400	commit: Сделал для 8 задачи сделал сдвиг через циклический алгоритм за один проход массива
+a721d132f6b6b95e365e916b840689f67c3e3adc 26b9363775362fb2cb1d11b345e9ade560c21fb4 AlexeyGolubkov <mannallgoall@gmail.com> 1638682438 +0400	merge 3523a77c07ed7cd86c6865dbe263cc06d51cb171: Merge made by the 'recursive' strategy.
+26b9363775362fb2cb1d11b345e9ade560c21fb4 1c6326dba1af4a59503d32e6c84649c2fde0dd57 AlexeyGolubkov <mannallgoall@gmail.com> 1638682970 +0400	checkout: moving from lesson3 to Lessons2
+1c6326dba1af4a59503d32e6c84649c2fde0dd57 26b9363775362fb2cb1d11b345e9ade560c21fb4 AlexeyGolubkov <mannallgoall@gmail.com> 1638683031 +0400	checkout: moving from Lessons2 to lesson3
+26b9363775362fb2cb1d11b345e9ade560c21fb4 26b9363775362fb2cb1d11b345e9ade560c21fb4 AlexeyGolubkov <mannallgoall@gmail.com> 1638683124 +0400	checkout: moving from lesson3 to lesson3_w_task8
+26b9363775362fb2cb1d11b345e9ade560c21fb4 e8c1b9f354722c9b1c32c25b23b6db2b8caba0ea AlexeyGolubkov <mannallgoall@gmail.com> 1638892937 +0400	checkout: moving from lesson3_w_task8 to main
+e8c1b9f354722c9b1c32c25b23b6db2b8caba0ea 7676b1ed1132539bc185d70aa9c48c56680dbb64 AlexeyGolubkov <mannallgoall@gmail.com> 1638951481 +0400	commit: Clear code of lesson 3
+7676b1ed1132539bc185d70aa9c48c56680dbb64 7f6afab9d84aa429b98bda1a58d27ede1f393788 AlexeyGolubkov <mannallgoall@gmail.com> 1639236445 +0400	commit: add lesson 4
+7f6afab9d84aa429b98bda1a58d27ede1f393788 7f6afab9d84aa429b98bda1a58d27ede1f393788 AlexeyGolubkov <mannallgoall@gmail.com> 1639236568 +0400	checkout: moving from main to lesson4
+7f6afab9d84aa429b98bda1a58d27ede1f393788 7f6afab9d84aa429b98bda1a58d27ede1f393788 AlexeyGolubkov <mannallgoall@gmail.com> 1639302274 +0400	checkout: moving from lesson4 to lesson5
+7f6afab9d84aa429b98bda1a58d27ede1f393788 6f2e22d5d466ea2bd45355c273a02f9a97518435 AlexeyGolubkov <mannallgoall@gmail.com> 1639302338 +0400	commit: урок 5 в новой ветке
+6f2e22d5d466ea2bd45355c273a02f9a97518435 286650df94ad018d59174a83721152746ae4ef3d AlexeyGolubkov <mannallgoall@gmail.com> 1639806279 +0400	commit: Урок 6
+286650df94ad018d59174a83721152746ae4ef3d 286650df94ad018d59174a83721152746ae4ef3d AlexeyGolubkov <mannallgoall@gmail.com> 1639806324 +0400	checkout: moving from lesson5 to lesson6
+286650df94ad018d59174a83721152746ae4ef3d 1e1bd04c7f9768bc220ea9b05342706c63a1feda AlexeyGolubkov <mannallgoall@gmail.com> 1639811428 +0400	commit: Добавлен подсчет всех животных
+1e1bd04c7f9768bc220ea9b05342706c63a1feda db7b76af944f7f19a4ab5042dc7e348e795e0f61 AlexeyGolubkov <mannallgoall@gmail.com> 1639815481 +0400	commit: Исправлена ошибка в методе плавания собак
+db7b76af944f7f19a4ab5042dc7e348e795e0f61 db7b76af944f7f19a4ab5042dc7e348e795e0f61 AlexeyGolubkov <mannallgoall@gmail.com> 1639858057 +0400	checkout: moving from lesson6 to lesson7
+db7b76af944f7f19a4ab5042dc7e348e795e0f61 2455f8c1a5745c0ece30771849411a421ee29448 AlexeyGolubkov <mannallgoall@gmail.com> 1639901823 +0400	commit: кормим только голодных котов, до исчерпания возможности накормить привередливых (которые не едят если понимают, что не наедятся количеством еды в чашке)
+2455f8c1a5745c0ece30771849411a421ee29448 2455f8c1a5745c0ece30771849411a421ee29448 AlexeyGolubkov <mannallgoall@gmail.com> 1640416819 +0400	checkout: moving from lesson7 to lesson8
+2455f8c1a5745c0ece30771849411a421ee29448 acefa710eb9bdac98ef0463021ec01a497a51de0 AlexeyGolubkov <mannallgoall@gmail.com> 1640774495 +0400	commit: lesson 8

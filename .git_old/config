@@ -1,0 +1,33 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[submodule]
+	active = .
+[remote "origin"]
+	url = https://github.com/AlexeyGolubkov/GeekBrainsR.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "tryNewBranch"]
+	remote = origin
+	merge = refs/heads/tryNewBranch
+[guitool "Pull"]
+	cmd = Pull
+	confirm = yes
+[gui]
+	wmstate = normal
+	geometry = 893x610+26+26 175 196
+[branch "Lessons2"]
+	remote = origin
+	merge = refs/heads/Lessons2
+[branch "lesson3"]
+	remote = origin
+	merge = refs/heads/lesson3
+[branch "lesson3_w_task8"]
+	remote = origin
+	merge = refs/heads/lesson3_w_task8
