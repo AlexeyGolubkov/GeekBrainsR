@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 6616e6b988b73b4933cdcbc772c92c8c5e6f704c AlexeyGolubkov <mannallgoall@gmail.com> 1638609485 +0400	branch: Created from Lessons2
-6616e6b988b73b4933cdcbc772c92c8c5e6f704c e7f5d245aca0508d401e76054128d14a4319c862 AlexeyGolubkov <mannallgoall@gmail.com> 1638610001 +0400	commit: lesson3
-e7f5d245aca0508d401e76054128d14a4319c862 915e98387bec23810e3dc706d26649fe9dec7239 AlexeyGolubkov <mannallgoall@gmail.com> 1638613878 +0400	commit: Исправлена ошибка последнего члена массива концов (len-2->len-1)
-915e98387bec23810e3dc706d26649fe9dec7239 54b8632f410f85c5752fde7c5c490ec59a12bfb3 AlexeyGolubkov <mannallgoall@gmail.com> 1638617392 +0400	commit: Добавлен код генерации случайных последовательностей у которых создаются условия равенства суммы начальных и конечных элементов. Код надо запустить нессколько раз, т.к. создание идет вероятностным методом
-54b8632f410f85c5752fde7c5c490ec59a12bfb3 35a12ed124cceb0c763773ecdc3fae111b02f53a AlexeyGolubkov <mannallgoall@gmail.com> 1638628038 +0400	commit: lesson 3 + half of task 8 (right shift - relesed)
-35a12ed124cceb0c763773ecdc3fae111b02f53a 07f0a09ab36d4329abc31ce9ce411dbd3b4e0fdd AlexeyGolubkov <mannallgoall@gmail.com> 1638640725 +0400	commit: Full home work of lesson3 (add task 8 with accumulator)
-07f0a09ab36d4329abc31ce9ce411dbd3b4e0fdd a721d132f6b6b95e365e916b840689f67c3e3adc AlexeyGolubkov <mannallgoall@gmail.com> 1638682416 +0400	commit: Сделал для 8 задачи сделал сдвиг через циклический алгоритм за один проход массива
-a721d132f6b6b95e365e916b840689f67c3e3adc 26b9363775362fb2cb1d11b345e9ade560c21fb4 AlexeyGolubkov <mannallgoall@gmail.com> 1638682438 +0400	merge 3523a77c07ed7cd86c6865dbe263cc06d51cb171: Merge made by the 'recursive' strategy.
